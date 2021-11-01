@@ -1,11 +1,12 @@
 import React from 'react'
 import Articles from './Articles';
 import articlesContent from "./articles-content";
+import { NotFound } from './NotFound';
 
 const Article = ({ match }) => {
     const name = match.params.name;
     const article = articlesContent.find((article) => article.name === name);
-    if (!article) return <h1 className="sm:text-4xl text-2xl font-bold mt-6 text-gray-900 mb-4 text-red-600">Article does not exisits</h1>
+    if (!article) return <NotFound/>
     const otherArticles = articlesContent.filter(article => article.name !== name)
     return (
         <div className="mb-20">
