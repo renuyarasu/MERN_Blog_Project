@@ -2,11 +2,15 @@
 
 ## npx create-react-app mern_blog
 ## npm install tailwindcss -D
+## npm install postcss-cli -D
 ## npm install autoprefixer npm-run-all postcss -D
-## npm install --save react-router-dom
 ## npx tailwindcss-cli@latest init
+## npm install --save react-router-dom
+## npm install --save whatwg-fetch
+
 
 <!-- package.json -->
+<!-- https://www.udemy.com/course/mern-stack-with-blog-project/ -->
 <!-- 
 "scripts": {
     "build:css": "postcss src/styles/index.css -o src/styles/tailwind.css",
@@ -20,7 +24,7 @@
 
   "devDependencies": {
     "autoprefixer": "^10.4.0",
-    "npm-run-all": "^4.1.5",
+    "## npm-run-all": "^4.1.5",
     "postcss": "^8.3.11",
     "postcss-cli": "^9.0.1",
     "tailwindcss": "^2.2.19"
